@@ -1,14 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Bootstrap B&B</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
+
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cozy Haven Bed & Breakfast</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Booking</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <h2>Cozy Haven Bed & Brekfast</h2>
+    <p>Enjoy our hotel's many highly rated luxuries!</p>
+
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/breakfast.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>5 star breakfast</h3>
+                        <p>Enjoy our 5 star breakfast menu!</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/cooks.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Made by Professional Cooks</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bed.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>In the comfort of our beds!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card text-bg-secondary mb-3 col-sm-4" style="width: 18rem;">
+            <img src="images/menu.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">See our 5 star menu!</p>
+                <button type="button" class="btn btn-success">See More</button>
+            </div>
+        </div>
+
+        <div class="card text-bg-secondary mb-3 col-sm-4" style="width: 18rem;">
+            <img src="images/rooms.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Tour our immaculent rooms!</p>
+                <button type="button" class="btn btn-success">See More</button>
+            </div>
+        </div>
+
+        <div class="card text-bg-secondary mb-3 col-sm-4" style="width: 18rem;">
+            <img src="images/book.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Book your room today!</p>
+                <a href="contact.html"><button type="button" class="btn btn-success">Book today!</button></a>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
 </body>
+
 </html>

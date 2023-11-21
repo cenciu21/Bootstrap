@@ -1,0 +1,38 @@
+.carousel-caption{
+    color: purple;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.row{
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.card{
+    padding-top: 10px;
+}
+
+h2{
+    text-align: center;
+}
+p {
+    text-align:center;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+}
+
+.submit button{
+    font-size: xx-large;
+}
